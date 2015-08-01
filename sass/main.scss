@@ -7,8 +7,17 @@ $body-color: #2ecc71;
 $wrapper-color: #FCFBE3;
 
 body {
-	padding: 60px 0;
+	padding: 20px 0;
 	background-color: $body-color; 
+}
+
+.heading {
+	padding: 20px 0;
+	text-align: center;
+
+	h1 {
+		font-size: 2em;
+	}
 }
 
 #wrapper {
@@ -18,4 +27,18 @@ body {
 	width: 70%;
 	height: 600px;
 	background-color: $wrapper-color;
+}
+
+.left {
+	float: left;
+	padding: 30px;
+	margin: 10px;
+	border: 2px solid red;
+}
+
+.right {
+	float: right;
+	padding: 30px;
+	margin: 10px;
+	border: 2px solid red;
 }

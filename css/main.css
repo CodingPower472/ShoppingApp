@@ -46,8 +46,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 body {
-  padding: 60px 0;
+  padding: 20px 0;
   background-color: #2ecc71; }
+
+.heading {
+  padding: 20px 0;
+  text-align: center; }
+  .heading h1 {
+    font-size: 2em; }
 
 #wrapper {
   padding: 20px 0;
@@ -56,3 +62,15 @@ body {
   width: 70%;
   height: 600px;
   background-color: #FCFBE3; }
+
+.left {
+  float: left;
+  padding: 30px;
+  margin: 10px;
+  border: 2px solid red; }
+
+.right {
+  float: right;
+  padding: 30px;
+  margin: 10px;
+  border: 2px solid red; }
