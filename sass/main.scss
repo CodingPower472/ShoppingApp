@@ -3,6 +3,8 @@
 
 @import "compass/reset";
 
+$body-color: #2ecc71;
+
 body {
-	background-color: #2ecc71;
+	background-color: $body-color; 
 }
