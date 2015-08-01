@@ -46,4 +46,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 body {
+  padding: 60px 0;
   background-color: #2ecc71; }
+
+#wrapper {
+  padding: 20px 0;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 70%;
+  height: 600px;
+  background-color: #FCFBE3; }
