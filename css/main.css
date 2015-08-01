@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,15 +46,10 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+/*-- GENERAL STYLES --*/
 body {
-  padding: 20px 0;
+  padding: 0 0 10px 0;
   background-color: #2ecc71; }
-
-.heading {
-  padding: 20px 0;
-  text-align: center; }
-  .heading h1 {
-    font-size: 2em; }
 
 #wrapper {
   padding: 20px 0;
@@ -63,14 +59,37 @@ body {
   height: 600px;
   background-color: #FCFBE3; }
 
+/*-- HEADER --*/
+header {
+  padding: 20px 0;
+  text-align: center; }
+  header h1 {
+    font-weight: 400;
+    font-size: 4em;
+    font-family: 'Shadows Into Light', cursive; }
+
+/*-- LEFT STYLES --*/
 .left {
   float: left;
+  width: 33%;
   padding: 30px;
-  margin: 10px;
-  border: 2px solid red; }
+  margin: 10px; }
 
+/*-- RIGHT STYLES --*/
 .right {
   float: right;
-  padding: 30px;
-  margin: 10px;
-  border: 2px solid red; }
+  width: 50%;
+  padding: 60px 30px;
+  margin: 10px; }
+
+.shopping-list {
+  margin: 0 auto;
+  width: 400px;
+  padding: 25px 0;
+  height: 300px;
+  background-color: #FFF;
+  text-align: center;
+  border-radius: 40px; }
+  .shopping-list h4 {
+    background-color: inherit;
+    margin: 0 0 15px 0; }
