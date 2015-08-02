@@ -15,16 +15,24 @@
 			<h1>Shop o Hoy</h1>
 		</header>
 		<div id="wrapper">
-			<div class="left">
-				<h3>Input Field</h3>
-				<input type="text" placeholder="Input your items">
-				<button type="button">Add it</button>
-			</div>
-			<div class="right">
-				
-				<div class="shopping-list">
+			<section class="left">
+				<div class="top-title">
+					<h3 style="text-align: left;">Input Field</h3>
+				</div>
+				<div class="input-area">
+					<input type="text" class="text-input" placeholder="Input your items">
+					<button id="add-item" type="button">Add it</button>
+				</div>				
+			</section>
+			<section class="right">
+				<div class="top-title">
 					<h4>Your List:</h4>
-					<button type="button">DELETE</button>
+				</div>
+				<div class="shopping-list">
+					<ul class="main-area">
+						<li>List Item One</li>
+					</ul>
+					<button id="delete" type="button">DELETE</button>
 				</div>
 
 			</div>

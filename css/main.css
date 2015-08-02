@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,7 +50,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*-- GENERAL STYLES --*/
 body {
   padding: 0 0 10px 0;
-  background-color: #2ecc71; }
+  background-color: #2ecc71;
+  font-family: "Montserrat", sans-serif; }
 
 #wrapper {
   padding: 20px 0;
@@ -58,6 +60,11 @@ body {
   width: 70%;
   height: 600px;
   background-color: #FCFBE3; }
+
+section {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid red; }
 
 /*-- HEADER --*/
 header {
@@ -68,28 +75,71 @@ header {
     font-size: 4em;
     font-family: 'Shadows Into Light', cursive; }
 
+.top-title {
+  text-align: center;
+  margin-bottom: 5px; }
+
 /*-- LEFT STYLES --*/
 .left {
-  float: left;
   width: 33%;
   padding: 30px;
   margin: 10px; }
 
+/*-- INPUT AREA STYLES --*/
+.text-input {
+  height: 30px; }
+
 /*-- RIGHT STYLES --*/
 .right {
-  float: right;
   width: 50%;
-  padding: 60px 30px;
+  padding: 30px 30px;
   margin: 10px; }
 
+/*-- SHOPPING LIST STYLES --*/
 .shopping-list {
   margin: 0 auto;
   width: 400px;
   padding: 25px 0;
   height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background-color: #FFF;
   text-align: center;
-  border-radius: 40px; }
+  border-radius-bottom: 40px; }
   .shopping-list h4 {
     background-color: inherit;
     margin: 0 0 15px 0; }
+
+.main-area {
+  background-color: rgba(241, 196, 15, 0.3);
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px; }
+
+/*-- BUTTON STYLES --*/
+#add-item {
+  background-color: green;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #fff;
+  height: 30px; }
+
+#delete {
+  background-color: red;
+  color: #FFF; }
+
+/*-- MEDIA QUERIES --*/
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: blue; }
+
+  #wrapper {
+    width: 90%; }
+
+  .left {
+    width: 69%; }
+
+  .right {
+    width: 69%; }
+    .right .shopping-list {
+      width: 100%; } }

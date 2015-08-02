@@ -2,7 +2,7 @@
 // Max's Sassy file
 
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 
 
 @import "compass/reset";
@@ -10,12 +10,15 @@
 $body-color: #2ecc71;
 $wrapper-color: #FCFBE3;
 
+$body-font: 'Montserrat', sans-serif;
+
 
 /*-- GENERAL STYLES --*/
 
 body {
 	padding: 0 0 10px 0;
 	background-color: $body-color; 
+	font-family: $body-font;
 }
 
 #wrapper {
@@ -27,6 +30,11 @@ body {
 	background-color: $wrapper-color;
 }
 
+section {
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid red;
+}
 
 /*-- HEADER --*/
 
@@ -41,11 +49,15 @@ header {
 	}
 }
 
+.top-title {
+	text-align: center;
+	margin-bottom:5px;
+}
+
 /*-- LEFT STYLES --*/
 
 
 .left {
-	float: left;
 	width: 33%;
 	padding: 30px;
 	margin: 10px;
@@ -53,31 +65,87 @@ header {
 }
 
 
+/*-- INPUT AREA STYLES --*/
+
+.text-input {
+	height: 30px;
+}
 
 
 /*-- RIGHT STYLES --*/
 
 
 .right {
-	float: right;
 	width: 50%;
-	padding: 60px 30px;
+	padding: 30px 30px;
 	margin: 10px;
 	
 }
+
+
+/*-- SHOPPING LIST STYLES --*/
 
 .shopping-list {
 	margin: 0 auto;
 	width:  400px;
 	padding: 25px 0;
 	height: 300px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	background-color: #FFF;
 	text-align: center;
-	border-radius: 40px;
+	border-radius-bottom: 40px;
 
 	h4 {
 		background-color: inherit;
 		margin: 0 0 15px 0;
 	}
 }
+.main-area {
+	background-color: rgba(241, 196, 15,0.3);
+	padding: 20px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+/*-- BUTTON STYLES --*/
+
+
+#add-item {
+	background-color: green;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: #fff;
+	height: 30px;
+}
+#delete {
+	background-color: red;
+	color: #FFF;
+}
+
+
+
+/*-- MEDIA QUERIES --*/
+
+@media only screen and (max-width: 500px) {
+	
+	body {
+		background-color: blue;
+	}
+	#wrapper {
+		width: 90%;
+	}
+	.left {
+		width: 69%;
+	}
+	.right {
+		width: 69%;
+
+		.shopping-list {
+			width: 100%;
+		}
+	}
+}
+
+
 
